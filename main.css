@@ -1,98 +1,117 @@
 body {
-    background-color: #555555;
-    overflow-x: hidden;
+  background-color: #555555;
+  overflow-x: hidden;
 }
+
 #mainwrap {
-    margin: 1rem auto;
-    width: 90vw;
+  margin: 1rem auto;
+  width: 90vw;
 }
-#buttonWrap {
-    display: flex;
-    margin-bottom: 1rem;
+
+#button-wrap {
+  display: flex;
+  margin-bottom: 1rem;
 }
-#buttonWrap > * {
-    width: 7rem;
-    margin-left: .2rem;
-    padding: .4rem;
-    border-radius: .4rem;
-    text-align: center;
-    font-weight: bold;
+
+#button-wrap > * {
+  width: 7rem;
+  margin-left: 0.2rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-weight: bold;
 }
-#resetButton {
-    background-color: #500E17;
-    color: #FFFFFF;
+
+#reset-button {
+  background-color: #500e17;
+  color: #ffffff;
 }
-#hintButton {
-    margin-left: auto;
-    background-color: #42AAC7;
-    color: #FFFFFF;
+
+#hint-button {
+  background-color: #42aac7;
+  margin-left: auto;
+  color: #ffffff;
 }
-#skipButton {
-    background-color: #717171;
-    color: #FFFFFF;
+
+#skip-button {
+  background-color: #717171;
+  color: #ffffff;
 }
-#signwrap {
-    position: relative;
+
+#sign-wrap {
+  position: relative;
 }
-#sign, #signClone {
-    width: 90vw;
-    background-color: #FFFFFF;
-    font-family: "ten-mincho-antique", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+
+#sign,
+#sign-clone {
+  width: 90vw;
+  background-color: #ffffff;
+  font-family: ten-mincho-antique, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
+
 #station-name {
-    font-size: 10vw;
-    line-height: 10vw;
-    font-weight: 700;
-    width: 90vw;
-    height: 40vw;
-    text-align: center;
-    border: none;
+  font-size: 10vw;
+  line-height: 10vw;
+  font-weight: 700;
+  width: 90vw;
+  height: 40vw;
+  text-align: center;
+  border: none;
 }
+
 #station-name,
 #station-name:focus {
-    outline: none;
+  outline: none;
 }
+
 #neighboring-stations {
-    grid-area: neighboring-stations;
-    background-color: #AAA58E;
-    display: grid;
-    grid-template-areas: "next-icon next previous previous-icon";
-    grid-template-columns: 6vw auto auto 6vw;
-    padding: 0 6vw;
-    height: 6ww;
+  grid-area: neighboring-stations;
+  background-color: #aaa58e;
+  display: grid;
+  grid-template-areas: "next-icon next previous previous-icon";
+  grid-template-columns: 6vw auto auto 6vw;
+  padding: 0 6vw;
+  height: 6vw;
 }
+
 #neighboring-stations > * {
-    color: #FFFFFF;
-    font-size: 4vw; 
-    line-height: 4vw;
+  color: #ffffff;
+  font-size: 4vw;
+  line-height: 4vw;
 }
+
 #previous-icon {
-    background-color: #FFFFFF;
-    height: 6vw;
-    width: 6vw;
+  background-color: #ffffff;
+  height: 6vw;
+  width: 6vw;
 }
+
 #previous-station-name {
-    grid-area: previous;
-    text-align: right;
-    padding: 1vw;
+  grid-area: previous;
+  text-align: right;
+  padding: 1vw;
 }
+
 #next-icon {
-    background-color: #FFFFFF;
-    height: 6vw;
-    width: 6vw;
+  background-color: #ffffff;
+  height: 6vw;
+  width: 6vw;
 }
+
 #next-station-name {
-    grid-area: next;
-    padding: 1vw;
+  grid-area: next;
+  padding: 1vw;
 }
+
 #line-color {
-    grid-area: line-color;
-    height: 4vw;
+  grid-area: line-color;
+  height: 4vw;
 }
+
 #line-selector {
-    display: grid;
-    color: #FFFFFF;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  color: #ffffff;
+  grid-template-columns: 1fr 1fr;
 }
