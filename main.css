@@ -1,0 +1,98 @@
+body {
+    background-color: #555555;
+    overflow-x: hidden;
+}
+#mainwrap {
+    margin: 1rem auto;
+    width: 90vw;
+}
+#buttonWrap {
+    display: flex;
+    margin-bottom: 1rem;
+}
+#buttonWrap > * {
+    width: 7rem;
+    margin-left: .2rem;
+    padding: .4rem;
+    border-radius: .4rem;
+    text-align: center;
+    font-weight: bold;
+}
+#resetButton {
+    background-color: #500E17;
+    color: #FFFFFF;
+}
+#hintButton {
+    margin-left: auto;
+    background-color: #42AAC7;
+    color: #FFFFFF;
+}
+#skipButton {
+    background-color: #717171;
+    color: #FFFFFF;
+}
+#signwrap {
+    position: relative;
+}
+#sign, #signClone {
+    width: 90vw;
+    background-color: #FFFFFF;
+    font-family: "ten-mincho-antique", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#station-name {
+    font-size: 10vw;
+    line-height: 10vw;
+    font-weight: 700;
+    width: 90vw;
+    height: 40vw;
+    text-align: center;
+    border: none;
+}
+#station-name,
+#station-name:focus {
+    outline: none;
+}
+#neighboring-stations {
+    grid-area: neighboring-stations;
+    background-color: #AAA58E;
+    display: grid;
+    grid-template-areas: "next-icon next previous previous-icon";
+    grid-template-columns: 6vw auto auto 6vw;
+    padding: 0 6vw;
+    height: 6ww;
+}
+#neighboring-stations > * {
+    color: #FFFFFF;
+    font-size: 4vw; 
+    line-height: 4vw;
+}
+#previous-icon {
+    background-color: #FFFFFF;
+    height: 6vw;
+    width: 6vw;
+}
+#previous-station-name {
+    grid-area: previous;
+    text-align: right;
+    padding: 1vw;
+}
+#next-icon {
+    background-color: #FFFFFF;
+    height: 6vw;
+    width: 6vw;
+}
+#next-station-name {
+    grid-area: next;
+    padding: 1vw;
+}
+#line-color {
+    grid-area: line-color;
+    height: 4vw;
+}
+#line-selector {
+    display: grid;
+    color: #FFFFFF;
+    grid-template-columns: 1fr 1fr;
+}
