@@ -936,6 +936,7 @@ function slideInNewStation(station) {
     }
   ).onfinish = () => {
     nameDOM.value = "";
+    nameDOM.placeholder = "";
     clone.remove();
   };
 }
