@@ -13,7 +13,7 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
-    <link href="main.css?v=20250401" rel="stylesheet">
+    <link href="main.css?v=20250402" rel="stylesheet">
     <title>南海線を覚えよう！</title>
 </head>
 
@@ -28,12 +28,10 @@
             <div id="sign">
                 <input id="station-name" type="text" autofocus>
                 <div id="neighboring-stations">
-                    <img id="next-icon"
-                        src="https://gist.github.com/user-attachments/assets/3e686603-f90e-479d-b9cb-f07e82a42909">
+                    <img id="next-icon" src="./next.png">
                     <div id="next-station-name"></div>
                     <div id="previous-station-name"></div>
-                    <img id="previous-icon"
-                        src="https://gist.github.com/user-attachments/assets/17451ed4-ec05-4331-8c0e-ba0309d19c9a">
+                    <img id="previous-icon" src="./previous.png">
                 </div>
                 <div id="line-color"></div>
             </div>
@@ -41,7 +39,7 @@
         <div id="line-selector">
         </div>
     </div>
-    <script src="main.js?v=20250401" defer></script>
+    <script src="main.js?v=20250402" defer></script>
 </body>
 
 </html>
